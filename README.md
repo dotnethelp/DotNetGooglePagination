@@ -5,7 +5,7 @@ Based On : https://jasonwatmore.com/post/2015/10/30/aspnet-mvc-pagination-exampl
 ## Basic usage
 Call DataPagingAsync() On Your IQueryable
 
-```
+```csharp
   IQueryable<Alarm> queryable = context.Alarms;
   
   var result = await queryable.DataPagingAsync(pageSize, currentPage);
@@ -14,7 +14,7 @@ Call DataPagingAsync() On Your IQueryable
 ```
 The result is an instance of #PagingModel
 
-```
+```csharp
  public class PagingModel<T>
     {
         public IQueryable<T> DataList { get; set; }
@@ -27,7 +27,8 @@ The result is an instance of #PagingModel
 ```
 
 ## Longer example 
-```
+
+```csharp
 public async Task<PagingModel<T>> GetAlarmsAsync<T>(int pageSize = 15, int currentPage = 1, string filter = ""){
            
                 if (currentPage < 1)
