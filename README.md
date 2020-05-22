@@ -30,6 +30,12 @@ While this looks pretty simple at first there's actually a bit of tricky logic t
 
 Based On : https://jasonwatmore.com/post/2015/10/30/aspnet-mvc-pagination-example-with-logic-like-google
 
+
+| NuGet package   | 
+| ------------- | 
+[![NuGet Status](http://img.shields.io/nuget/v/DotNetGooglePagination.svg?style=flat)](https://www.nuget.org/packages/DotNetGooglePagination/) |
+
+
 ## Basic usage
 Call DataPagingAsync() On Your IQueryable
 
